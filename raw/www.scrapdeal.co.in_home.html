@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Scrapdeal</title>
+
+
+
+    <!-- responsive meta -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- For IE -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Google Fonts -->
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;600;700;800;900&display=swap"
+
+          rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <link rel="stylesheet" href="assets/css/aos.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/custom-animate.css">
+
+    <link rel="stylesheet" href="assets/css/fancybox.min.css">
+
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+
+    <link rel="stylesheet" href="assets/css/imp.css">
+
+    <link rel="stylesheet" href="assets/css/jquery.bootstrap-touchspin.css">
+
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+    <link rel="stylesheet" href="assets/css/rtl.css">
+
+    <link rel="stylesheet" href="assets/css/scrollbar.css">
+
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+
+
+
+    <!-- Module css -->
+
+    <link rel="stylesheet" href="assets/css/module-css/header-section.css">
+
+    <link rel="stylesheet" href="assets/css/module-css/banner-section.css">
+
+    <link rel="stylesheet" href="assets/css/module-css/about-section.css">
+
+    <link rel="stylesheet" href="assets/css/module-css/blog-section.css">
+
+    <link rel="stylesheet" href="assets/css/module-css/fact-counter-section.css">
+
+    <link rel="stylesheet" href="assets/css/module-css/faq-section.css">
+
+    <link rel="stylesheet" href="assets/css/module-css/contact-page.css">
+
+    <link rel="stylesheet" href="assets/css/module-css/breadcrumb-section.css">
+
+    <link rel="stylesheet" href="assets/css/module-css/team-section.css">
+
+    <link rel="stylesheet" href="assets/css/module-css/partner-section.css">
+
+    <link rel="stylesheet" href="assets/css/module-css/testimonial-section.css">
+
+    <link rel="stylesheet" href="assets/css/module-css/services-section.css">
+
+    <link rel="stylesheet" href="assets/css/module-css/footer-section.css">
+
+
+
+    <link href="assets/css/color/theme-color.css" id="jssDefault" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Favicon -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo.png">
+
+    <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32">
+
+    <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16">
+
+
+
+    <!-- Fixing Internet Explorer-->
+
+    <!--[if lt IE 9]>
+
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+    <script src="assets/js/html5shiv.js"></script>
+
+    <![endif]-->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png">
+
+
+
+    <meta name="facebook-domain-verification" content="tdl6s6p7rltev6hcr13xvix0bhcoqp" />
+
+    <meta name="google-site-verification" content="CkYmSXIk1jQJn5Oglx9y9GXNkqjiwZilnKCAYddP1PU" />
+
+
+</head><style>
+
+
+    /* GRID LAYOUT */
+    .news-grid {
+        display: grid;
+        grid-template-columns: 1fr;   /* single column for mobile */
+        gap: 20px;
+    }
+
+    @media (min-width: 992px) {
+        .news-grid {
+            grid-template-columns: repeat(3, 1fr); /* two columns for large screens */
+        }
+    }
+
+    /* --- Your card styles --- */
+    .news-card {
+        background:#fff;
+        border-radius:12px;
+        box-shadow:0 6px 18px rgba(15,23,42,0.06);
+        overflow:hidden;
+        display:flex;
+        flex-direction:column;
+    }
+    .news-media img {
+        width:100%;
+        height:220px;
+        object-fit:cover;
+        display:block;
+    }
+    .meta-row {
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:12px 16px;
+    }
+    .title { font-size:1.2rem; font-weight:600; margin:0; }
+    .sub { font-size:0.9rem; color:#6b7280; }
+    .badge {
+        background:#f1f5f9;
+        padding:4px 10px;
+        border-radius:999px;
+        font-size:0.8rem;
+        font-weight:600;
+    }
+    .content { padding:0 16px 16px; }
+    .description {
+        font-size:0.95rem;
+        color:#111827;
+        line-height:1.4;
+        margin-bottom:12px;
+        display:-webkit-box;
+        -webkit-line-clamp:3;
+        -webkit-box-orient:vertical;
+        overflow:hidden;
+    }
+    .actions { display:flex; gap:8px; }
+    .btn {
+        background:#f3f4f6;
+        padding:6px 12px;
+        border-radius:8px;
+        text-decoration:none;
+        font-size:0.85rem;
+        font-weight:600;
+        color:#111827;
+    }
+    .btn.primary { background:#006940; color:#fff; }
+    .card-footer {
+        padding:12px 16px;
+        border-top:1px solid #f3f4f6;
+        font-size:0.85rem;
+        color:#6b7280;
+        display:flex;
+        justify-content:space-between;
+    }
+
+    /* GRID for events */
+    .events-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    @media (min-width: 992px) {
+        .events-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (min-width: 1200px) {
+        .events-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    /* Event Card */
+    .event-card {
+        background:#fff;
+        border-radius:16px;
+        overflow:hidden;
+        box-shadow:0 6px 18px rgba(15,23,42,0.06);
+        display:flex;
+        flex-direction:column;
+        transition:transform .15s ease;
+    }
+    .event-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .event-media {
+        position:relative;
+    }
+    .event-media img {
+        width:100%;
+        height:200px;
+        object-fit:cover;
+        display:block;
+    }
+    .event-date {
+        position:absolute;
+        bottom:10px;
+        left:10px;
+        background:#006940;
+        color:#fff;
+        padding:6px 10px;
+        border-radius:6px;
+        font-weight:600;
+        font-size:0.9rem;
+    }
+
+    .event-body {
+        padding:16px;
+        display:flex;
+        flex-direction:column;
+        flex-grow:1;
+    }
+    .event-title {
+        font-size:1.25rem;
+        font-weight:700;
+        color:#1e293b;
+        margin:0 0 8px;
+    }
+    .event-desc {
+        font-size:0.95rem;
+        color:#374151;
+        line-height:1.4;
+        flex-grow:1;
+        margin-bottom:12px;
+        display:-webkit-box;
+        -webkit-line-clamp:3;
+        -webkit-box-orient:vertical;
+        overflow:hidden;
+    }
+    .event-actions {
+        margin-top:auto;
+    }
+    .event-btn {
+        display:inline-block;
+        background:#006940;
+        color:#fff;
+        padding:8px 14px;
+        border-radius:8px;
+        text-decoration:none;
+        font-size:0.9rem;
+        font-weight:600;
+    }
+    .event-btn.secondary {
+        background:#f3f4f6;
+        color:#111827;
+        margin-left:8px;
+    }
+</style>
+
+<body>
+
+<div class="boxed_wrapper ltr">
+
+    <!-- Preloader -->
+    <!--    <div class="loader-wrap">-->
+    <!--        <div class="preloader">-->
+    <!--            <div class="preloader-close">Preloader Close</div>-->
+    <!--        </div>-->
+    <!--        <div class="layer layer-one"><span class="overlay"></span></div>-->
+    <!--        <div class="layer layer-two"><span class="overlay"></span></div>-->
+    <!--        <div class="layer layer-three"><span class="overlay"></span></div>-->
+    <!--    </div>-->
+
+    <!-- page-direction -->
+    <!--        <div class="page_direction">-->
+    <!--            <div class="demo-rtl direction_switch"><button class="rtl">RTL</button></div>-->
+    <!--            <div class="demo-ltr direction_switch"><button class="ltr">LTR</button></div>-->
+    <!--        </div>-->
+    <!-- page-direction end -->
+
+    <!-- switcher menu -->
+    <!--        <div class="switcher">-->
+    <!--            <div class="switch_btn">-->
+    <!--                <button><img src="assets/images/icon/color-palette.png" alt="Color Palette"> </button>-->
+    <!--            </div>-->
+    <!--            <div class="switch_menu">-->
+    <!--                &lt;!&ndash; color changer &ndash;&gt;-->
+    <!--                <div class="switcher_container">-->
+    <!--                    <ul id="styleOptions" title="switch styling">-->
+    <!--                        <li>-->
+    <!--                            <a href="javascript: void(0)" data-theme="blue" class="blue-color"></a>-->
+    <!--                        </li>-->
+    <!--                        <li>-->
+    <!--                            <a href="javascript: void(0)" data-theme="pink" class="pink-color"></a>-->
+    <!--                        </li>-->
+    <!--                        <li>-->
+    <!--                            <a href="javascript: void(0)" data-theme="violet" class="violet-color"></a>-->
+    <!--                        </li>-->
+    <!--                        <li>-->
+    <!--                            <a href="javascript: void(0)" data-theme="crimson" class="crimson-color"></a>-->
+    <!--                        </li>-->
+    <!--                        <li>-->
+    <!--                            <a href="javascript: void(0)" data-theme="orange" class="orange-color"></a>-->
+    <!--                        </li>-->
+    <!--                        <li>-->
+    <!--                            <a href="javascript: void(0)" data-theme="green" class="green-color"></a>-->
+    <!--                        </li>-->
+    <!--                    </ul>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!-- end switcher menu -->
+
+
+    <!-- Main header-->
+
+
+    <header class="main-header header-style-one">
+
+    <!--Start Header Top-->
+    <div class="header-top">
+        <div class="auto-container">
+            <div class="outer-box">
+                <div class="header-top__left">
+                    <div class="header-contact-info-style1">
+                        <ul>
+<!--                            <li>-->
+<!--                                <div class="icon">-->
+<!--                                    <span class="icon-pin"></span>-->
+<!--                                </div>-->
+<!--                                <div class="text">-->
+<!--                                    <p>SINHGAD ROA, TAL- HAVELI, PUNE, Maharashtra</p>-->
+<!--                                </div>-->
+<!--                            </li>-->
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-email"></span>
+                                </div>
+                                <div class="text">
+                                    <p><a href="mailto:info@scrapdeal.co.in">info@scrapdeal.co.in</a></p>
+                                </div>
+                            </li>
+<!--                            <li>-->
+<!--                                <div class="icon">-->
+<!--                                    <span class="icon-time"></span>-->
+<!--                                </div>-->
+<!--                                <div class="text">-->
+<!--                                    <p>Mon - Sat 9:00 am to 6:00 pm</p>-->
+<!--                                </div>-->
+<!--                            </li>-->
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="header-top__right">
+                    <div class="header-button-style1">
+                        <a class="btn-one" target="_blank" href="app/scrapotplogin.php">
+                                    <span class="txt">
+                                        Request for a pickup<i class="icon-refresh arrow"></i>
+                                    </span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--End Header Top-->
+
+    <!--Start Header-->
+    <div class="header">
+        <div class="auto-container">
+            <div class="outer-box">
+
+                <!--Start Header Left-->
+                <div class="header-left">
+                    <div class="main-logo-box">
+                        <a href="index.php">
+                            <img src="assets/images/logo.png" alt="Awesome Logo" title="">
+                        </a>
+                    </div>
+                    <div class="header-social-link">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#"><i class="icon-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--End Header Left-->
+
+                <!--Start Header Middle-->
+                <div class="header-middle">
+                    <div class="nav-outer style1 clearfix">
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler">
+                            <div class="inner">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </div>
+                        </div>
+                        <!-- Main Menu -->
+                        <nav class="main-menu style1 navbar-expand-md navbar-light">
+                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li class="dropdown current"><a href="index.php"><span>Home</span></a></li>
+                                    <li class="dropdown"><a href="#"><span>Services</span></a>
+                                        <div class="megamenu">
+                                            <div class="row clearfix">
+                                                <div class="col-xl-6 column">
+                                                    <ul>
+                                                        <li><a href="doortodoorpickup.php">Door to door Scrap Pickup</a></li>
+                                                        <li><a href="packagingscrap.php">Packaging Industry Scrap</a>
+                                                        </li>
+                                                        <li><a href="constructionscrap.php">Construction Site Scrap</a>
+                                                        </li>
+                                                        <li><a href="itscrap.php">IT Companies Scrap</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-6 column">
+                                                    <ul>
+                                                        <li><a href="collegescrap.php">College Institution Scrap</a>
+                                                        </li>
+                                                        <li><a href="printpressscrap.php">Printing Press Scrap</a></li>
+                                                        <li><a href="societyredevelopmentscrap.php">Society
+                                                                Redevelopment Scrap</a></li>
+                                                        <li><a href="bankofficescrap.php">Bank/Office Scrap</a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li class="dropdown"><a href="#"><span>Categories</span></a>
+                                        <ul>
+                                            <li><a href="mixedwaste.php">Mixed Waste</a></li>
+                                            <li><a href="paper.php">Paper</a></li>
+                                            <li><a href="oldcloth.php">Old Cloths</a></li>
+                                            <li><a href="metals.php">Metals</a></li>
+                                            <li><a href="plastic.php">Plastic</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="ourindustry.php"><span>Our Industry</span></a></li>
+                                    <li><a href="clients.php"><span>Our Clients</span></a></li>
+                                    <li><a href="about.php"><span>About Us</span></a></li>
+                                    <li><a href="contactus.php"><span>Contact Us</span></a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+                    </div>
+                </div>
+                <!--End Header Middle-->
+
+                <!--Start Header Right-->
+                <div class="header-right">
+                    <div class="phone-number-box1">
+                        <div class="icon">
+                            <span class="icon-phone-ringing"></span>
+                        </div>
+                        <div class="phone">
+                            <p>Have any questions?</p>
+                            <a href="tel:9021195291">+91 83 8008 2002</a>
+                        </div>
+                    </div>
+
+                    <div class="serach-button-style1">
+                        <button type="button" class="search-toggler">
+                            <i class="icon-magnifying-glass"></i>
+                        </button>
+                    </div>
+
+                </div>
+                <!--End Header Right-->
+
+            </div>
+        </div>
+    </div>
+    <!--End header-->
+
+    <!--Sticky Header-->
+    <div class="sticky-header">
+        <div class="container">
+            <div class="clearfix">
+                <!--Logo-->
+                <div class="logo float-left">
+                    <a href="index.php" class="img-responsive">
+                        <img src="assets/images/logo.png" alt="" title="">
+                    </a>
+                </div>
+                <!--Right Col-->
+                <div class="right-col float-right">
+                    <!-- Main Menu -->
+                    <nav class="main-menu clearfix">
+                        <!--Keep This Empty / Menu will come through Javascript-->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Sticky Header-->
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <div class="close-btn"><span class="icon fa fa-times-circle"></span></div>
+        <nav class="menu-box">
+            <div class="nav-logo"><a href="index.php"><img src="assets/images/logo.php"
+                                                            alt="" title=""></a></div>
+            <div class="menu-outer">
+                <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+            </div>
+            <!--Social Links-->
+            <div class="social-links">
+                <ul class="clearfix">
+                    <li><a href="#"><span class="fab fa fa-facebook-square"></span></a></li>
+                    <li><a href="#"><span class="fab fa fa-twitter-square"></span></a></li>
+                    <li><a href="#"><span class="fab fa fa-pinterest-square"></span></a></li>
+                    <li><a href="#"><span class="fab fa fa-google-plus-square"></span></a></li>
+                    <li><a href="#"><span class="fab fa fa-youtube-square"></span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- End Mobile Menu -->
+
+</header>
+    <!-- Start Main Slider -->
+    <section class="main-slider style1">
+        <div class="slider-box">
+            <!-- Banner Carousel -->
+            <div class="banner-carousel owl-theme owl-carousel">
+                <!-- Slide -->
+                <div class="slide">
+                    <div class="image-layer" style="background-image:url(assets/images/slide1.png)">
+                    </div>
+                    <div class="auto-container">
+                        <div class="content">
+                            <div class="sub-title">
+                                <h3>Find Sustainable Waste Services</h3>
+                            </div>
+                            <div class="big-title">
+                                <h2>
+                                    First time in Pune <br>Doorstep Scrap Collection Service
+                                </h2>
+                            </div>
+                            <div class="btns-box">
+                                <a class="btn-one" target="_blank" href="app/scrapotplogin.php">
+                                        <span class="txt">
+                                            Raise Request Now<i class="icon-refresh arrow"></i>
+                                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="image-layer" style="background-image:url(assets/images/slide2.png)">
+                    </div>
+                    <div class="auto-container">
+                        <div class="content">
+                            <div class="sub-title">
+                                <h3>Find Sustainable Waste Services</h3>
+                            </div>
+                            <div class="big-title">
+                                <h2>
+                                    We deal in all kind of Recyclable Scrap Material
+                                </h2>
+                            </div>
+                            <div class="btns-box">
+                                <a class="btn-one" target="_blank" href="app/scrapotplogin.php">
+                                        <span class="txt">
+                                            Raise Request Now<i class="icon-refresh arrow"></i>
+                                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide -->
+                <div class="slide">
+                    <div class="image-layer" style="background-image:url(assets/images/slide3.png)">
+                    </div>
+                    <div class="auto-container">
+                        <div class="content">
+                            <div class="sub-title">
+                                <h3>Find Sustainable Waste Services</h3>
+                            </div>
+                            <div class="big-title">
+                                <h2>
+                                    We use Electronic Weighing Machine to weigh your Scrap.
+                                </h2>
+                            </div>
+                            <div class="btns-box">
+                                <a class="btn-one" target="_blank" href="app/scrapotplogin.php">
+                                        <span class="txt">
+                                            Raise Request Now<i class="icon-refresh arrow"></i>
+                                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide -->
+
+
+            </div>
+        </div>
+    </section>
+    <!-- End Main Slider -->
+
+    <!--Start Features Style1 Area-->
+    <section class="features-style1-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="features-style1__content">
+                        <ul>
+
+                            <li>
+                                <div class="single-features-style1">
+                                    <div class="icon-holder">
+                                        <div class="box"></div>
+                                        <span class="icon-garbage-can"></span>
+                                    </div>
+                                    <div class="text-holder">
+                                        <h3><a href="#">Raise A request</a></h3>
+                                        <p>Raise a request to Pickup your scrap according to your category.Select Pick
+                                            up date and time</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-features-style1">
+                                    <div class="icon-holder">
+                                        <div class="box"></div>
+                                        <span class="icon-calendar"></span>
+                                    </div>
+                                    <div class="text-holder">
+                                        <h3><a href="#">Pickup Schedule</a></h3>
+                                        <p>As per your convenience select pickup date and time. Our representative will
+                                            call you and confirm your pickup date and time</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-features-style1">
+                                    <div class="icon-holder">
+                                        <div class="box"></div>
+                                        <span class="icon-dustbin"></span>
+                                    </div>
+                                    <div class="text-holder">
+                                        <h3><a href="#">Get Paid</a></h3>
+                                        <p>After Successful Pickup and weighing your scrap Get Paid Hassle free.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Features Style1 Area-->
+
+
+    <!--Start About Style1 Area-->
+    <section class="about-style1-area">
+        <div class="shape1"></div>
+        <div class="container">
+            <div class="row text-right-rtl">
+                <div class="col-xl-6">
+                    <div class="about-style1__image clearfix">
+                        <div class="text-outer" data-aos="fade-left" data-aos-easing="linear"
+                             data-aos-duration="1500">
+
+                        </div>
+
+                        <ul>
+                            <li>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="assets/images/webimage.jpeg" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="about-style1__content">
+                        <div class="sec-title">
+                            <div class="sub-title">
+                                <h3>Get to Know About Us</h3>
+                            </div>
+                            <h2>Scrapdeal</h2>
+                        </div>
+                        <div class="inner-content">
+                            <div class="text">
+                                <p>Scrapdeal is an online scrap selling application. We provide doorstep scrap
+                                    Collection service with your suitable date and Time. We purchase all kind of Paper
+                                    Scrap, Plastic, Metals, Reusable Clothes, E-Waste, Tires, and Glass Bottles etc. We
+                                    also deal in Industrial scrap, College/Institutional Scrap, Packaging Industry
+                                    Scrap, Construction Site Scrap, Society Redevelopment Scrap, IT Companies Scrap,
+                                    Bank/Offices Scrap.</p>
+                            </div>
+
+
+                            <div class="about-style1__bottom-content">
+                                <div class="row">
+
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="text-box">
+                                            <ul>
+                                                <li> Accurate Weight.</li>
+                                                <li> Daily Updated Rate Card.</li>
+                                                <li> Immediate Cash Payment.</li>
+                                                <li>Transparent and safe Service with Professional scrap collector.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-6 col-lg-6 col-md-6">
+                                        <div class="video-gallery-style1">
+                                            <div class="video-gallery-style1__bg"
+                                                 style="background-image: url(assets/images/logo.png);">
+                                            </div>
+                                            <div class="icon wow zoomIn animated" data-wow-delay="300ms"
+                                                 data-wow-duration="1500ms">
+                                                <a class="video-popup" title="Video Gallery"
+                                                   href="https://www.youtube.com/watch?v=HqlojFFxSmI">
+                                                    <span class="icon-play-buttton"></span>
+                                                </a>
+                                            </div>
+
+
+                                        </div>
+
+
+                                        <a style="margin-top: 10px;" class="btn-one" target="_blank" href="app/scrapotplogin.php">
+                                    <span class="txt">
+                                        Order Now<i class="icon-refresh arrow"></i>
+                                    </span>
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <br>
+                            <div class="col-xl-6 col-lg-12">
+                                <div class="text">
+                                    <a href="https://play.google.com/store/apps/details?id=scrapdeal.weoto.com&hl=en_IN&gl=US"><img
+                                                src="assets/images/google-play-badge.png" alt=""/></a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--End About Style1 Area-->
+
+    <!--Start Service Style1 Area-->
+    <section class="service-style1-area">
+        <div class="service-style1__bg"
+             style="background-image: url(assets/images/backgroundimg01.png);"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+
+                    <div class="service-style1__top">
+                        <div class="service-style1__top-title">
+                            <div class="sec-title sec-title--style2">
+                                <div class="sub-title">
+                                    <h3>Our Services</h3>
+                                </div>
+                                <h2>Waste Services</h2>
+                            </div>
+                            <div class="text">
+                                <p>India generates 62 million tons of garbage every year. Out of
+                                    which only 70% is get collected
+                                     Among collected garbage only 19% is treated and processed
+                                    and remaining goes to dumping ground</p>
+                            </div>
+                        </div>
+                        <div class="service-style1__top-button">
+                            <a class="btn-one" target="_blank" href="app/scrapotplogin.php">
+                                    <span class="txt">
+                                        book now<i class="icon-refresh arrow"></i>
+                                    </span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row text-right-rtl">
+                <!--Start Single Service Style1-->
+                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="00ms"
+                     data-wow-duration="1500ms">
+                    <div class="single-service-style1">
+                        <div class="inner">
+                            <div class="round-box"></div>
+                            <div class="icon">
+                                <span class="icon-garbage-bin"></span>
+                            </div>
+                            <div class="text">
+                                <h3>Door to Door <br> Pickup</h3>
+                                <p>We Provide door to door pickup service for the customers.</p>
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                            <a href="doortodoor.php"><span class="icon-right-arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Service Style1-->
+                <!--Start Single Service Style1-->
+                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="00ms"
+                     data-wow-duration="1500ms">
+                    <div class="single-service-style1">
+                        <div class="inner">
+                            <div class="round-box"></div>
+                            <div class="icon">
+                                <span class="icon-dustbin-1"></span>
+                            </div>
+                            <div class="text">
+                                <h3>Packaging Industry <br> Scrap</h3>
+                                <p>Waste Corrugated Boxes/kraft</p>
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                            <a href="packagingscrap.php"><span class="icon-right-arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Service Style1-->
+                <!--Start Single Service Style1-->
+                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="00ms"
+                     data-wow-duration="1500ms">
+                    <div class="single-service-style1">
+                        <div class="inner">
+                            <div class="round-box"></div>
+                            <div class="icon">
+                                <span class="icon-portable-toilet"></span>
+                            </div>
+                            <div class="text">
+                                <h3>Construction Site <br> Scrap</h3>
+                                <p>PVC Pipe Scrap, All kind of Metal Scrap, Waste Kraft, GI Pipe cut pieces, Used Copper
+                                    / Aluminum Wires etc. </p>
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                            <a href="constructionscrap.php"><span class="icon-right-arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Service Style1-->
+                <!--Start Single Service Style1-->
+                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="00ms"
+                     data-wow-duration="1500ms">
+                    <div class="single-service-style1">
+                        <div class="inner">
+                            <div class="round-box"></div>
+                            <div class="icon">
+                                <span class="icon-recycle"></span>
+                            </div>
+                            <div class="text">
+                                <h3>IT Companies <br> Scrap</h3>
+                                <p>Old Monitors, CPUs, Printers, Telephone, Servers, UPS and many more.</p>
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                            <a href="services-single-4.html"><span class="icon-right-arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Service Style1-->
+
+            </div>
+            <div class="row text-right-rtl">
+                <!--Start Single Service Style1-->
+                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="00ms"
+                     data-wow-duration="1500ms">
+                    <div class="single-service-style1">
+                        <div class="inner">
+                            <div class="round-box"></div>
+                            <div class="icon">
+                                <span class="icon-garbage-bin"></span>
+                            </div>
+                            <div class="text">
+                                <h3>College Institution <br> Scrap</h3>
+                                <p>All Kind of Paper waste including old Journals, Assignment, Q & A sheets etc. </p>
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                            <a href="collegescrap.php"><span class="icon-right-arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Service Style1-->
+                <!--Start Single Service Style1-->
+                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="00ms"
+                     data-wow-duration="1500ms">
+                    <div class="single-service-style1">
+                        <div class="inner">
+                            <div class="round-box"></div>
+                            <div class="icon">
+                                <span class="icon-dustbin-1"></span>
+                            </div>
+                            <div class="text">
+                                <h3>Printing Press <br> Scrap</h3>
+                                <p>Book Cutting, LCC, Rim Cutting, Newsprint, Wrapper</p>
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                            <a href="printpressscrap.php"><span class="icon-right-arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Service Style1-->
+                <!--Start Single Service Style1-->
+                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="00ms"
+                     data-wow-duration="1500ms">
+                    <div class="single-service-style1">
+                        <div class="inner">
+                            <div class="round-box"></div>
+                            <div class="icon">
+                                <span class="icon-portable-toilet"></span>
+                            </div>
+                            <div class="text">
+                                <h3>Society
+                                    Redevelopment <br> Scrap</h3>
+                                <p>Removal of Safety Door, Aluminum Window, Metal Grills, Water Taps, Fans, Tubelights,
+                                    Wiring, Channel Gates etc. </p>
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                            <a href="societyredevelopmentscrap.php"><span class="icon-right-arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Service Style1-->
+                <!--Start Single Service Style1-->
+                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="00ms"
+                     data-wow-duration="1500ms">
+                    <div class="single-service-style1">
+                        <div class="inner">
+                            <div class="round-box"></div>
+                            <div class="icon">
+                                <span class="icon-recycle"></span>
+                            </div>
+                            <div class="text">
+                                <h3>Bank/Office <br> Scrap</h3>
+                                <p> We provide Important Documents Shredding Services with no any extra cost</p>
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                            <a href="bankofficescrap.php"><span class="icon-right-arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Service Style1-->
+
+            </div>
+        </div>
+    </section>
+    <!--End Service Style1 Area-->
+
+
+    <!--Start Testimonial Style1 Area-->
+
+    <!--End Testimonial Style1 Area-->
+
+    <!--Start Partner Area-->
+    <section class="partner-area">
+
+        <div class="container">
+            <div class="brand-content">
+                <div class="sec-title">
+
+                    <h2>Meet Our Branded Clients</h2>
+                </div>
+                <div class="inner">
+                    <ul class="partner-box partner-carousel owl-carousel owl-theme owl-dot-style1 rtl-carousel">
+                        <!--Start Single Partner Logo Box-->
+
+
+                        <li class="single-partner-logo-box">
+                            <a href="#"><img style="opacity: 1" ; src=https://scrapdeal.co.in/assets/images/brand/brand1.png
+                                             alt="Brand 1"></a>
+                        </li><li class="single-partner-logo-box">
+                            <a href="#"><img style="opacity: 1" ; src=https://scrapdeal.co.in/assets/images/brand/brand2.png
+                                             alt="Brand 2"></a>
+                        </li><li class="single-partner-logo-box">
+                            <a href="#"><img style="opacity: 1" ; src=https://scrapdeal.co.in/assets/images/brand/brand3.png
+                                             alt="Brand 3"></a>
+                        </li><li class="single-partner-logo-box">
+                            <a href="#"><img style="opacity: 1" ; src=https://scrapdeal.co.in/assets/images/brand/brand4.png
+                                             alt="Brand 4"></a>
+                        </li><li class="single-partner-logo-box">
+                            <a href="#"><img style="opacity: 1" ; src=https://scrapdeal.co.in/assets/images/brand/brand5.png
+                                             alt="Brand 5"></a>
+                        </li><li class="single-partner-logo-box">
+                            <a href="#"><img style="opacity: 1" ; src=https://scrapdeal.co.in/assets/images/brand/brand6.png
+                                             alt="Brand 6"></a>
+                        </li><li class="single-partner-logo-box">
+                            <a href="#"><img style="opacity: 1" ; src=https://scrapdeal.co.in/assets/images/brand/brand7.png
+                                             alt="Brand 7"></a>
+                        </li><li class="single-partner-logo-box">
+                            <a href="#"><img style="opacity: 1" ; src=https://scrapdeal.co.in/assets/images/brand/brand8.png
+                                             alt="Brand 8"></a>
+                        </li>
+                        <!--End Single Partner Logo Box-->
+                        <!--Start Single Partner Logo Box-->
+                        <!--End Single Partner Logo Box-->
+                        <!--Start Single Partner Logo Box-->
+                        <!--End Single Partner Logo Box-->
+                        <!--Start Single Partner Logo Box-->
+                        <!--End Single Partner Logo Box-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Partner Area-->
+
+    <!--Start Features Style2 Area-->
+    <section class="features-style2-area">
+        <div class="auto-container">
+            <div class="row">
+
+                <div class="col-xl-6 col-lg-6">
+                    <div class="single-features-style2-box">
+                        <div class="inner-content">
+                            <div class="icon">
+                                <div class="box"></div>
+                                <span class="icon-garbage-can"></span>
+                            </div>
+                            <div class="title">
+
+                                <h2>Door to Door<br> Pickup Services</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6">
+                    <div class="single-features-style2-box">
+                        <div class="img-bg"
+                             style="background-image: url(assets/images/landfill.png);"></div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6">
+                    <div class="single-features-style2-box">
+                        <div class="img-bg"
+                             style="background-image: url(assets/images/acceptlocation.png);"></div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6">
+                    <div class="single-features-style2-box left">
+                        <div class="inner-content">
+                            <div class="icon">
+                                <div class="box"></div>
+                                <span class="icon-toxic-waste"></span>
+                            </div>
+                            <div class="title">
+
+                                <h2>Accepts Special Waste<br> at Many Locations</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--End Features Style2 Area-->
+
+    <!--Start Service Style2 Area-->
+    <section class="service-style2-area">
+        <div class="gray-bg"></div>
+        <div class="container">
+            <div class="sec-title text-center">
+                <div class="sub-title">
+                    <h3>Industries We Serve</h3>
+                </div>
+                <h2>Solutions by Industry</h2>
+            </div>
+            <div class="row">
+
+                <!--Start Single Service Style1-->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-service-style2">
+                        <div class="img-holder">
+                            <img src="assets/images/4.png" alt="">
+                            <!--                            <div class="icon-box">-->
+                            <!--                                <span class="icon-store"></span>-->
+                            <!--                            </div>-->
+                        </div>
+                        <div class="text-holder text-center">
+                            <h3><a href="industries-details.html">Residential Apartments</a></h3>
+                            <p>Arrange Recyclable waste collection Drives after every 3 months</p>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Service Style1-->
+
+                <!--Start Single Service Style1-->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-service-style2">
+                        <div class="img-holder">
+                            <img src="assets/images/itofficescrap.png" alt="">
+                            <!--                            <div class="icon-box">-->
+                            <!--                                <span class="icon-restaurant"></span>-->
+                            <!--                            </div>-->
+                        </div>
+                        <div class="text-holder text-center">
+                            <h3><a href="industries-details.html">IT Companies/Bank Offices</a></h3>
+                            <p>Old Monitors, CPUs, Printers, Telephone, Servers, UPS and many more on regularly
+                                Basis. </p>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Service Style1-->
+
+                <!--Start Single Service Style1-->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-service-style2">
+                        <div class="img-holder">
+                            <img src="assets/images/industry.png" alt="">
+                            <!--                            <div class="icon-box">-->
+                            <!--                                <span class="icon-stethoscope"></span>-->
+                            <!--                            </div>-->
+                        </div>
+                        <div class="text-holder text-center">
+                            <h3><a href="industries-details.html">Constructions and Industries</a></h3>
+                            <p>PVC Pipe Scrap, All kind of Metal Scrap, Waste Kraft, GI Pipe cut pieces, Used Copper /
+                                Aluminum Wires etc. on Daily Weekly and Monthly intervals </p>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Service Style1-->
+
+            </div>
+        </div>
+    </section>
+
+    <section class="service-style2-area">
+        <div class="gray-bg"></div>
+        <div class="container">
+            <div class="sec-title text-center">
+
+                <h2>We are in the News Articles</h2>
+            </div>
+            <div class="row">
+
+                <div class="news-grid">
+
+
+                    <article class="news-card" aria-labelledby="news-title-1">
+                        <div class="news-media">
+                            <a target="_blank" href="https://www.hindustantimes.com/cities/pune-news/startup-mantra-waste-is-money-say-founders-of-scrapdeal-101751655637927.html"><img src="http://scrapdeal.co.in/admin/restapp/public//admin/images/uploads/1756912826.png" alt="Article image preview" /></a>
+                        </div>
+                        <div>
+                            <div class="meta-row">
+                                <div>
+                                    <h3 class="title" id="news-title-1">Startup Mantra: Waste is money, say founders of Scrapdeal</h3>
+                                    <div class="sub">Published: 05/07/2025</div>
+                                </div>
+                                <span class="badge">#0</span>
+                            </div>
+                            <div class="content">
+                                <p class="description">Jayesh Pakhale founded "Scrapdeal" after struggling to dispose of scrap during college, turning it into a successful waste management business.</p>
+                                <div class="actions">
+                                    <a class="btn" target="_blank" href="https://www.hindustantimes.com/cities/pune-news/startup-mantra-waste-is-money-say-founders-of-scrapdeal-101751655637927.html">Read Full Article</a>
+                                    <a class="btn primary" href="https://www.hindustantimes.com/cities/pune-news/startup-mantra-waste-is-money-say-founders-of-scrapdeal-101751655637927.html">Share</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article><article class="news-card" aria-labelledby="news-title-1">
+                        <div class="news-media">
+                            <a target="_blank" href="https://thebetterindia.com/451566/scrapdeal-pune-recycling-startup/"><img src="http://scrapdeal.co.in/admin/restapp/public//admin/images/uploads/1756913000.png" alt="Article image preview" /></a>
+                        </div>
+                        <div>
+                            <div class="meta-row">
+                                <div>
+                                    <h3 class="title" id="news-title-1">‘Digital Kabadiwala’ by 3 Brothers Recycled 10 Lakh Kg Waste & Built Rs 2 Cr Biz Without Funding</h3>
+                                    <div class="sub">Published: 03/09/2025</div>
+                                </div>
+                                <span class="badge">#0</span>
+                            </div>
+                            <div class="content">
+                                <p class="description">From a small warehouse in Pune, three brothers are transforming India’s waste management. With no loans or fancy offices, they’ve recycled over 10 lakh kg of waste, empowered 200+ workers, and built a ₹2 crore business—proving that tech, trust, and zero-waste values can truly change lives.</p>
+                                <div class="actions">
+                                    <a class="btn" target="_blank" href="https://thebetterindia.com/451566/scrapdeal-pune-recycling-startup/">Read Full Article</a>
+                                    <a class="btn primary" href="https://thebetterindia.com/451566/scrapdeal-pune-recycling-startup/">Share</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article><article class="news-card" aria-labelledby="news-title-1">
+                        <div class="news-media">
+                            <a target="_blank" href="https://inshorts.com/en/news/scrapdeal--the-college-startup-modernizing-recycling-in-pune-1750837153475"><img src="http://scrapdeal.co.in/admin/restapp/public//admin/images/uploads/1756913443.png" alt="Article image preview" /></a>
+                        </div>
+                        <div>
+                            <div class="meta-row">
+                                <div>
+                                    <h3 class="title" id="news-title-1">Scrapdeal: The college startup modernizing recycling in Pune</h3>
+                                    <div class="sub">Published: 25/06/2025</div>
+                                </div>
+                                <span class="badge">#0</span>
+                            </div>
+                            <div class="content">
+                                <p class="description">In Pune, recycling just got a modern upgrade. Scrapdeal, a revolutionary platform started by a college student, brings the kabadiwala right to your doorstep through an easy-to-use app. This innovative service is transforming the recycling process, making it more convenient and efficient, while driving a positive impact on the city’s waste management system.</p>
+                                <div class="actions">
+                                    <a class="btn" target="_blank" href="https://inshorts.com/en/news/scrapdeal--the-college-startup-modernizing-recycling-in-pune-1750837153475">Read Full Article</a>
+                                    <a class="btn primary" href="https://inshorts.com/en/news/scrapdeal--the-college-startup-modernizing-recycling-in-pune-1750837153475">Share</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Card 1 -->
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--End Service Style2 Area-->
+
+    <section class="service-style2-area">
+        <div class="gray-bg"></div>
+        <div class="container">
+            <div class="sec-title text-center">
+
+                <h2>Events By Scrapdeal</h2>
+            </div>
+            <div class="row">
+
+                <div class="events-grid">
+
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--End Service Style2 Area-->
+
+
+
+    <!--Start Choose Style1 Area-->
+    <section class="choose-style1-area">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-4">
+                    <div class="choose-style1__title-box">
+                        <div class="sec-title sec-title--style2">
+                            <div class="sub-title">
+                                <h3>Why Choose us</h3>
+                            </div>
+                            <h2>We only Provide<br> Quality Waste<br> Services</h2>
+                        </div>
+                        <div class="btn-box">
+                            <a href="https://play.google.com/store/apps/details?id=scrapdeal.weoto.com&hl=en_IN&gl=US"><img
+                                        src="assets/images/google-play-badge.png" alt=""/></a>
+
+                            <a style="margin-top: 10px;" class="btn-one" target="_blank" href="app/scrapotplogin.php">
+                                    <span class="txt">
+                                        Order Now<i class="icon-refresh arrow"></i>
+                                    </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-8">
+                    <div class="video-gallery-style2">
+                        <div class="video-gallery-style2__bg"
+                             style="background-image: url(assets/images/5.png);">
+                        </div>
+                        <div class="icon wow zoomIn animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <a class="video-popup" title="Video Gallery"
+                               href="https://www.youtube.com/watch?v=kXbs9DE1Kf8">
+                                <span class="icon-play-buttton"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--End Choose Style1 Area-->
+
+
+    <!--Start Fact Counter Area-->
+    <section class="fact-counter-area">
+        <div class="fact-counter-area-bg"
+             style="background-image: url(assets/images/backgroundimg01.png);"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <ul class="fact-counter-box">
+                        <!--Start Single Fact Counter-->
+                        <li class="single-fact-counter">
+                            <div class="inner">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="30">30+</span>
+                                    <span class="icon-plus-sign plus"></span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <h3>Industries Served</h3>
+                                <p>-Collect Material on Daily Weekly and Monthly intervals</p>
+                            </div>
+                        </li>
+                        <!--End Single Fact Counter-->
+                        <!--Start Single Fact Counter-->
+                        <li class="single-fact-counter">
+                            <div class="inner">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="200">200</span>
+                                    <span class="icon-plus-sign plus"></span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <h3>Tie Up Residential Apartments
+                                </h3>
+                                <p>Arrange Recyclable waste collection Drives after every 3 months
+                                </p>
+                            </div>
+                        </li>
+                        <!--End Single Fact Counter-->
+                        <!--Start Single Fact Counter-->
+                        <li class="single-fact-counter">
+                            <div class="inner">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="20">20+</span>
+                                    <span class="k">k+</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <h3>Happy Customers</h3>
+                                <p>With very high retention rate</p>
+                            </div>
+                        </li>
+                        <!--End Single Fact Counter-->
+                        <!--Start Single Fact Counter-->
+                        <li class="single-fact-counter">
+                            <div class="inner">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="50">50+</span>
+                                    <span class="k">k+</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <h3>Metric Tonnes of Material Recycled</h3>
+                                <p>Metric Tonnes of Material get recycle through our most innovative recycling chain</p>
+                            </div>
+                        </li>
+                        <!--End Single Fact Counter-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Fact Counter Area-->
+
+    <!--Start Blog Style1 Area-->
+    <!--End Blog Style1 Area-->
+
+    <!--Start slogan area-->
+    <section class="slogan-area">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-5 col-lg-12">
+                    <div class="phone-number-box2">
+                        <div class="icon">
+                            <span class="icon-phone-ringing"></span>
+                        </div>
+                        <div class="phone">
+                            <p>Have any questions?</p>
+                            <a href="tel:8380082002">+91-83 8008 2002</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-12">
+                    <a style="margin-top: 10px;" class="btn-one" target="_blank" href="app/scrapotplogin.php">
+                                    <span class="txt">
+                                        Raise Request Now<i class="icon-refresh arrow"></i>
+                                    </span>
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-12">
+                    <div class="slogan-btn-box">
+                        <!--<a class="btn-one" href="aboutus.php">-->
+                        <!--        <span class="txt">-->
+                        <!--            discover more<i class="icon-refresh arrow"></i>-->
+                        <!--        </span>-->
+                        <!--</a>-->
+                        <a href="https://play.google.com/store/apps/details?id=scrapdeal.weoto.com&hl=en_IN&gl=US"><img
+                                    height="160px" ; width="480" ;
+                                    src="assets/images/google-play-badge.png" alt=""/></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End slogan area-->
+
+    <!--Start Google Map Style1 Area-->
+    <section class="google-map-style1-area">
+        <div class="auto-container">
+            <div class="home1-page-map-outer">
+                <!--Map Canvas-->
+                <div class="map-canvas" data-zoom="12" data-lat="18.457523982958147" data-lng="73.80578686946272"
+                     data-type="roadmap" data-hue="#ffc400" data-title="Envato"
+                     data-icon-path="assets/images/icon/map-marker.png"
+                     data-content="Pune Maharashtra<br><a href='mailto:info@scrapdeal.co.in'>info@scrapdeal.co.in</a>">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Google Map Style1 Area-->
+
+
+    
+
+
+<div class="bottom-parallax">
+    <!--Start footer area -->
+    <footer class="footer-area">
+        <div class="footer-area-bg" style="background-image: url(assets/images/landfill.png);">
+        </div>
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="subscribe-content-box">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="subscribe-title">
+                                <div class="icon">
+                                    <span class="icon-open-envelope"></span>
+                                </div>
+                                <div class="inner-title">
+                                    <h3>Subscribe Now to Get<br> Latest Updates</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="subscribe-box">
+                                <form class="subscribe-form" action="#">
+                                    <input type="email" name="email" placeholder="Email address">
+                                    <button class="btn-one" type="submit">
+                                        <span class="txt"><i class="icon-send"></i></span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Start Footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="row text-right-rtl">
+
+                    <!--Start single footer widget-->
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <div class="single-footer-widget marbtm50">
+                            <div class="title">
+                                <h3>Address</h3>
+                            </div>
+                            <div class="our-company-info">
+                                <div class="text-box">
+                                    
+                                    <p>S. NO.14,, LAGAD MALA, NEAR DATTA KRUSHNAI MANGAL KARYALAY, SINHGAD ROA, TAL- HAVELI, PUNE, Pune, Maharashtra, 411041</p>
+                                </div>
+                                <div class="footer-social-link">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <a href="#"><i class="icon-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-pinterest"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icon-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single footer widget-->
+
+                    <!--Start single footer widget-->
+                    <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                        <div class="single-footer-widget marbtm50">
+                            <div class="title">
+                                <h3>Links</h3>
+                            </div>
+                            <div class="footer-widget-links">
+                                <ul>
+                                    <li><a href="ourindustry.php"><span>Our Industry</span></a></li>
+                                    <li><a href="clients.php"><span>Our Clients</span></a></li>
+                                    <li><a href="about.php"><span>About Us</span></a></li>
+                                    <li><a href="contactus.php"><span>Contact Us</span></a></li>
+                                    <li><a href="privacypolicy.php"><span>Privacy Policy</span></a></li>
+                                    <li><a href="webtnc.php"><span>Terms & Conditions</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single footer widget-->
+
+                    <!--Start single footer widget-->
+                    <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                        <div class="single-footer-widget margin-left40">
+                            <div class="title">
+                                <h3>Services</h3>
+                            </div>
+                            <div class="footer-widget-links">
+                                <ul>
+                                    <li><a href="mixedwaste.php">Mixed Waste</a></li>
+                                    <li><a href="paper.php">Paper</a></li>
+                                    <li><a href="oldcloth.php">Old Cloths</a></li>
+                                    <li><a href="metals.php">Metals</a></li>
+                                    <li><a href="plastic.php">Plastic</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single footer widget-->
+
+                    <!--Start single footer widget-->
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <div class="single-footer-widget single-footer-widget--contact-info-box pdtop50">
+                            <div class="title">
+                                <h3>Contact</h3>
+                            </div>
+                            <div class="footer-widget-contact-info">
+                                <ul>
+                                    <li>
+                                        <div class="inner">
+                                            <div class="icon phone">
+                                                <span class="icon-telephone"></span>
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    <a href="tel:8380082002">+91-83 8008 2002</a>
+                                                   
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inner">
+                                            <div class="icon">
+                                                <span class="icon-email-1"></span>
+                                            </div>
+                                            <div class="text">
+                                                <p>
+                                                    <a href="mailto:info@scrapdeal.co.in">info@scrapdeal.co.in</a>
+                                                </p>
+                                            </div>
+                                            <div class="text">
+                                                <a href="https://play.google.com/store/apps/details?id=scrapdeal.weoto.com&hl=en_IN&gl=US"><img
+                                                            src="assets/images/google-play-badge.png" alt=""/></a>
+
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single footer widget-->
+
+                </div>
+            </div>
+        </div>
+        <!--End Footer-->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="bottom-inner">
+                    <div class="copyright">
+                        <p>Copyright &copy; 2023 <a href="index.php">Scrapdeal</a> All Rights Reserved. Made IN INDIA with ❤ </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+    </footer>
+    <!--End footer area-->
+</div>
+
+    <button class="scroll-top scroll-to-target" data-target="html">
+        <span class="flaticon-up-arrow"></span>
+    </button>
+
+    <!-- search-popup -->
+    <div id="search-popup" class="search-popup">
+        <div class="close-search"><i class="icon-close"></i></div>
+        <div class="popup-inner">
+            <div class="overlay-layer"></div>
+            <div class="search-form">
+                <form method="post" action="index.php">
+                    <div class="form-group">
+                        <fieldset>
+                            <input type="search" class="form-control" name="search-input" value=""
+                                   placeholder="Search Here" required>
+                            <input type="submit" value="Search Now!" class="theme-btn style-four">
+                        </fieldset>
+                    </div>
+                </form>
+                <h3>Recent Search Keywords</h3>
+                <ul class="recent-searches">
+                    <li><a href="mixedwaste.php">Mixed Waste</a></li>
+                    <li><a href="paper.php">Paper</a></li>
+                    <li><a href="oldcloth.php">Old Cloths</a></li>
+                    <li><a href="metals.php">Metals</a></li>
+                    <li><a href="plastic.php">Plastic</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- search-popup end -->
+</div>
+
+
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/isotope.js"></script>
+<script src="assets/js/jquery.bootstrap-touchspin.js"></script>
+<script src="assets/js/jquery.countTo.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/jquery.event.move.js"></script>
+<script src="assets/js/jquery.fancybox.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/jquery.nice-select.min.js"></script>
+<script src="assets/js/jquery.paroller.min.js"></script>
+<script src="assets/js/jquery-sidebar-content.js"></script>
+<script src="assets/js/knob.js"></script>
+<script src="assets/js/map-script.js"></script>
+<script src="assets/js/owl.js"></script>
+<script src="assets/js/pagenav.js"></script>
+<script src="assets/js/scrollbar.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/tilt.jquery.js"></script>
+<script src="assets/js/TweenMax.min.js"></script>
+<script src="assets/js/validation.js"></script>
+<script src="assets/js/wow.js"></script>
+
+<script src="assets/js/jquery-1color-switcher.min.js"></script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChAcTq3NqAXaD02m0mI7XO_Nr2sIB9Zys&callback=initMap">
+</script>
+
+<!-- thm custom script -->
+<script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
